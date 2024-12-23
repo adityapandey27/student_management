@@ -1,0 +1,73 @@
+.login-component{
+ 
+        height: calc(100vh - 50px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg');
+        background-size:auto;
+        
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat;
+}
+
+.login-container{
+    border: 2px solid rgba(0, 0, 0, 0.291);
+    padding: 30px;
+    width: 20%;
+    height: 55%;
+    background-color: rgba(20, 58, 58, 0.484);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.479);
+    align-items: center;
+}
+
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.loginForm > label{
+    margin: 10px 0;
+}
+.loginForm input{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+}
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+h2{
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 470px) {
+    .login-container{
+        width: 60%;
+        height: 45%;
+    }
+}
+
+@media only screen and (min-width: 470px)and (max-width: 600px) {
+    .login-container{
+        width: 40%;
+        height: 55%;
+    }
+}
+
+@media only screen and (min-width: 600px)and (max-width: 1400px) {
+    .login-container{
+        width: 30%;
+        height: 35%;
+    }
+}
